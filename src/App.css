@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrow-left {
+  border-width: 0 8px 8px 0;
+  border-color: transparent black transparent transparent;
+  top: -20px;
+  left: 50%;
+  transform: rotate(-45deg);
+  margin-left: -2px;
+}
+
+.arrow-right {
+  border-width: 8px 8px 0 0;
+  border-color: black transparent transparent transparent;
+  top: -20px;
+  right: 50%;
+  transform: rotate(45deg);
+  margin-right: -2px;
+}
