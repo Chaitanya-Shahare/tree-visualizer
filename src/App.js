@@ -12,9 +12,8 @@ class TNode {
 }
 
 function App() {
-  const [tree, setTree] = React.useState([3,null,2,null,1]); // Example array representing the tree
+  const [tree, setTree] = React.useState([6,3,5,null,2,0,null,null,1]); // Example array representing the tree
 
-  // if (tree.length === 0) return <div>No tree data</div>;
 
   const root = new TNode(tree[0]);
   let queue = [root];
